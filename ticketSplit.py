@@ -301,6 +301,9 @@ def chooseTrip(ses,url):
 
 
 
+
+
+
 travelFrom = 'BHI'
 travelTo = 'EDB'
 traveltime = '09:00'
@@ -370,12 +373,14 @@ if inp!= '':
 
 inp = raw_input('Travelling time (press enter for {}): '.format(traveltime))
 
-if len(inp) == 1:
-  traveltime = '0{}:00'.format(inp)
-elif len(inp) == 2:
-  traveltime = '{}:00'.format(inp)
-elif inp!= '':
-  traveltime = inp
+
+
+
+if inp!= '':
+  if len(inp) <= 2:
+    traveltime = '{:02d}:00'.format(inp)
+  else:
+    traveltime = inp
 
 
 
