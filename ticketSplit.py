@@ -33,9 +33,7 @@ class CallingPoint:
       exit()
   
   def __str__(self):
-    #s = '{:>40} {}\t{}'.format(str(self.station),str(self.arr),str(self.dep))
     return('{:>40} {}\t{}'.format(str(self.station),str(self.arr),str(self.dep)))
-    #return( str(self.station) + '\t' + str(self.arr) + '\t' + str(self.dep) )
     
   
 
@@ -206,13 +204,7 @@ class RouteGraph:
         else:
           rowtmp = PyQuery( sres )
           price = float(sres('td.fare label').text()[1:])
-        #if price > 1000:
-          #print( 'Price was detected to be {}'.format(price) )
-          #print( 'URL: {}'.format(url) )
-        #print( 'From: {}\tTo: {}\tPrice: {}'.format(self.stops[i][0].abbr,self.stops[j][0].abbr,price) )
-        
-        
-        #print(price)
+          
         self.priceTable[self.stops[i][0]][self.stops[j][0]] = price
       print('Progress: {:2}/{}'.format(i + 1,self.length-1))
     print('')
@@ -319,15 +311,6 @@ year = ('{}'.format(today.year))[2:]
 month = '{:02d}'.format(today.month)
 day = '{:02d}'.format(today.day)
 
-#if today.month > 9:
-  #month = '{}'.format(today.month)
-#else:
-  #month = '0{}'.format(today.month)
-
-#if today.day > 9:
-  #day = '{}'.format(today.day)
-#else:
-  #day = '0{}'.format(today.day)
 
 
 date = '{}/{}/{}'.format(day,month,year)
@@ -426,9 +409,6 @@ session = requests.session()
 
 response = session.get(url)
 doc = PyQuery(response.content)
-#print(response.cookies)
-#print(requests.utils.dict_from_cookiejar(session.cookies))
-
 
 
 
@@ -461,7 +441,6 @@ response = session.get(url)
 doc = PyQuery(response.content)
 
 
-#print(doc('table#journey tbody td.changes'))
 
 legsnum = int(doc('table#journey tbody td.changes').text()) + 1
 
