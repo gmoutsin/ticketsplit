@@ -304,7 +304,7 @@ def chooseTrip(ses,url):
 
 
 
-travelFrom = 'BHI'
+travelFrom = 'BHM'
 travelTo = 'EDB'
 traveltime = '09:00'
 
