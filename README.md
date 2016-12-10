@@ -36,7 +36,6 @@ Travelling time (press enter for 09:00): 14
  4: 15:53   BHI   EDB   20:23   4h30m   0    118.00
  5: 16:05   BHI   EDB   21:28   5h23m   1    112.90
 URL: http://ojp.nationalrail.co.uk/service/timesandfares/BHI/EDB/161216/1400/dep
-Choose trip: 
 Choose trip: 2
 
 
