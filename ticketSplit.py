@@ -378,7 +378,7 @@ inp = raw_input('Travelling time (press enter for {}): '.format(traveltime))
 
 if inp!= '':
   if len(inp) <= 2:
-    traveltime = '{:02d}:00'.format(inp)
+    traveltime = '{:02d}:00'.format(int(inp))
   else:
     traveltime = inp
 
