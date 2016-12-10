@@ -6,7 +6,7 @@ The script was written for Python 2 and requires the following modules: requests
 
 Python 2 was chosen because I couldn't make pyquery work in Python 3.
 
-In order to use the script you need to go to a website for booking tickets. There you can see the abbreviation of the departure and arrival stations. For example the abbriviation of Birmingham is BMI.
+In order to use the script you need to go to a website for booking tickets. There you can see the abbreviation of the departure and arrival stations. For example the abbriviation of Birmingham New Street is BHM.
 
 Once you have these, run the script. You need to enter the abbreviation of the 2 stations. This can upper case or lower case letters. Then you need to add the date in the form DD/MM/YYYY or just type +X to search for X days later. Finally you need to specify the time by writting HH:MM or just HH.
 
